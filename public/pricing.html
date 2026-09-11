@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Premium Plans · DSA Visual Lab</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/premium.css" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand-link" href="index.html"
+        ><span class="brand-mark">D</span><b>DSA Visual Lab</b></a
+      >
+      <nav>
+        <a href="index.html">Visual Labs</a
+        ><a href="library.html">Question Bank</a
+        ><a class="active" href="pricing.html">Premium</a
+        ><a href="auth.html" id="accountLink">Login</a>
+      </nav>
+    </header>
+    <main class="premium-main">
+      <section class="pricing-hero">
+        <span class="eyebrow">DSA VISUAL LAB PREMIUM</span>
+        <h1>One plan. Every topic.<br /><span>Learn without limits.</span></h1>
+        <p>
+          Unlock the full question bank, premium labs, progress sync, interview
+          tracks, and future lessons.
+        </p>
+      </section>
+      <section id="plans" class="plans"></section>
+      <section class="trust-strip">
+        <div><b>🔒 Secure checkout</b><span>Razorpay-hosted payment</span></div>
+        <div>
+          <b>⚡ Instant access</b
+          ><span>Subscription activates after verification</span>
+        </div>
+        <div><b>📚 Growing library</b><span>New topics included</span></div>
+      </section>
+      <section class="feature-compare">
+        <h2>Everything included</h2>
+        <div class="feature-list">
+          <span>✓ All data structures and algorithms</span
+          ><span>✓ 2+ questions per topic</span
+          ><span>✓ Step-by-step visual labs</span
+          ><span>✓ Interview revision mode</span
+          ><span>✓ Synced learning progress</span
+          ><span>✓ Premium topic updates</span>
+        </div>
+      </section>
+      <p id="paymentStatus" class="payment-status" role="status"></p>
+    </main>
+    <script type="module" src="js/pricing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DSA Question Bank</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/premium.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand-link" href="index.html"
+        ><span class="brand-mark">D</span><b>DSA Visual Lab</b></a
+      >
+      <nav>
+        <a href="index.html">Visual Labs</a
+        ><a class="active" href="library.html">Question Bank</a
+        ><a href="pricing.html">Premium</a
+        ><a href="auth.html" id="accountLink">Login</a>
+      </nav>
+    </header>
+    <main class="premium-main">
+      <section class="library-hero">
+        <span class="eyebrow">COMPLETE DSA LIBRARY</span>
+        <h1>Learn. Predict. Explain.</h1>
+        <p>
+          Core data structures, algorithms, patterns, and two explanation-first
+          questions for every topic.
+        </p>
+        <div class="library-stats">
+          <b id="topicCount"></b><span>topics</span><b id="questionCount"></b
+          ><span>questions</span>
+        </div>
+      </section>
+      <section class="filter-row">
+        <input
+          id="topicSearch"
+          placeholder="Search arrays, Dijkstra, DP…"
+          aria-label="Search topics"
+        /><select id="categoryFilter" aria-label="Filter category">
+          <option value="">All categories</option></select
+        ><label><input type="checkbox" id="freeOnly" /> Free only</label>
+      </section>
+      <section id="topicGrid" class="topic-library"></section>
+    </main>
+    <dialog id="questionDialog">
+      <form method="dialog">
+        <button class="dialog-close" aria-label="Close">×</button>
+        <div id="questionContent"></div>
+      </form>
+    </dialog>
+    <script type="module" src="js/library.js"></script>
+  </body>
+</html>

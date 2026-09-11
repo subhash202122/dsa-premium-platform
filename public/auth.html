@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login · DSA Visual Lab</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/premium.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <a class="brand-link" href="index.html"
+        ><span class="brand-mark">D</span><b>DSA Visual Lab</b></a
+      >
+      <section class="auth-card">
+        <div class="auth-copy">
+          <span class="eyebrow">YOUR LEARNING ACCOUNT</span>
+          <h1>Continue your<br />DSA journey.</h1>
+          <p>
+            Save progress, unlock premium lessons, and practice across devices.
+          </p>
+          <div class="auth-proof">
+            <span>✓ Passwords are hashed</span
+            ><span>✓ Secure HTTP-only sessions</span
+            ><span>✓ MongoDB-ready profiles</span>
+          </div>
+        </div>
+        <form id="authForm" class="auth-form">
+          <div class="auth-tabs">
+            <button type="button" class="active" data-mode="login">Login</button
+            ><button type="button" data-mode="signup">Create account</button>
+          </div>
+          <label id="nameField" class="hidden"
+            >Name<input name="name" autocomplete="name" minlength="2" /></label
+          ><label
+            >Email<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required /></label
+          ><label
+            >Password<input
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              minlength="8"
+              required /></label
+          ><button class="btn primary" id="submitAuth">Login securely</button>
+          <p id="authStatus" class="form-status" role="status"></p>
+          <small
+            >By continuing, you agree to the Terms and Privacy Policy you
+            publish for your business.</small
+          >
+        </form>
+      </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+  </body>
+</html>

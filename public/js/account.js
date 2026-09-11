@@ -1,0 +1,1 @@
+export async function getMe(){try{const r=await fetch('/api/auth/me',{credentials:'include'});return r.ok?(await r.json()).user:null}catch{return null}}export function formatDate(value){return value?new Intl.DateTimeFormat('en-IN',{dateStyle:'medium'}).format(new Date(value)):''}
